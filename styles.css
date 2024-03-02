@@ -4,6 +4,7 @@ body{
 
 HTML{
     scroll-behavior: smooth;
+    background-image: linear-gradient(#3f2525, black);
 }
 
 
@@ -24,29 +25,17 @@ HTML{
 
 
 #background{
-    background-color: rgb(23, 11, 11);
     height: 900px;   
 }
 #background1{
-    background-color: #160e0e;
     margin-top: -1.3em;
     padding: 11em;
 }
 #background2{
-    background-image: url(images/Background-picture.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(50%);
     height: 600px;
     margin-top: -1em;
     position: relative;
 }
-#background3{
-    height: 450px;
-    background-color: black;
-    margin-top: -2.2em;
-}
-
 
 
 
@@ -54,7 +43,7 @@ HTML{
 
 @media screen and (min-width: 1000px) {
     /* Nav / forside */
-    #Home h1{
+    /* #Home h1{
         color: #FFD4B5;
     }
     
@@ -74,13 +63,34 @@ HTML{
         justify-content: space-between;
         margin-right: 3em;
         margin-left: 3em;
+        margin-bottom: -0.6em;
     }
     .nav-box h1{
         color: #FFD4B5;
         font-size: 30px;
+        margin-top: 0.3em;
     }
     .nav h2{
-        margin-top: 1.3em;
+        margin-top: 1em;
+    } */
+
+    .lilo{
+        text-align: start;
+        margin-left: 2em;
+        line-height: 26px;
+    }
+    .lilo p{
+        color: #FFD4B5;
+        margin-top: -1.5em;
+        letter-spacing: 2px;
+    }
+    #box h2{
+        font-size: large;
+        border-style: solid;
+        width: 10em;
+        padding: 5px;
+        margin: auto;
+        border-radius: 40px;
     }
     
     #box{
@@ -89,27 +99,45 @@ HTML{
     }
     
     #box h1{
-        font-size: 7em;
-        margin-top: -0.2em;
-        margin-bottom: 0.3em;
+        font-size: 9em;
+        margin-top: -2em;
+        font-family: fantasy;
     }
-    
-    #box h2{
-        margin-top: 8em;
-    }
-    
-    #box a{
-        padding: 15px;
-        border-style: solid;
-        width: 10em;
-        margin: auto;
-        border-radius: 9px;
-        text-decoration: none;
+    #box p{
         color: #FFD4B5;
+        font-size: 15em;
+        margin-top: 0.5em;
+        font-family: fantasy;
     }
 
-    hr{
-        width: 90%;
+
+    span{
+        font-size: 40px;
+    }
+
+
+
+    /* SoMe */
+    .SoMe{
+        position: fixed;
+        display: grid;
+        left: 1em;
+        top: 20em;
+        padding: 20px;
+    }
+    .SoMe a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        background-color: black;
+        padding: 15px;
+        margin-bottom: 22px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: white;
+    }
+    h2{
+        color: white;
     }
 
 
@@ -118,10 +146,11 @@ HTML{
 
     /* Resume */
     .resume{
-        background-color: black;
+        border-top: #FFD4B5 1px solid;
+        border-bottom: #FFD4B5 1px solid;
         text-align: center;
         padding: 20px;
-        width: 42%;
+        width: 80%;
         margin: auto;
     }
     h1{
@@ -149,7 +178,7 @@ HTML{
     .About h1{
         position: absolute;
         color: #FFD4B5;
-        top: 3em;
+        top: 2em;
         font-size: 40px;
         left: 8.3em;
     }
@@ -157,7 +186,7 @@ HTML{
     .About hr{
         position: absolute;
         width: 15%;
-        top: 12em;
+        top: 10em;
         left: 15em;
         color: #FFD4B5;
     }
@@ -173,40 +202,12 @@ HTML{
 
     /* Contact */
     #background3 h1{
-        text-align: center;
-        padding: 20px;
-        font-size: 40px;
-    }
-    #background3 h2{
-        color: #FFD4B5;
-    }
-    #Contact{
-        display: flex;
-        justify-content: center;
-    }
-    textarea{
-        width: 20em;
-        background-color: #1c1c1c;
-        color: white;
-        padding: 10px;
-    }
-    input{
-        width: 20em;
-        background-color: #1c1c1c;
-        color: white;
-        padding: 10px;  
-    }
-    button{
-        width: 10em;
-        background-color: #1c1c1c;
-        color: white;
-        padding: 10px;
-        margin-left: 11.7em;
-    }
-
-    form{
-        display: grid;
-        gap: 10px;
+        text-align: end;
+        font-size: 15em;
+        font-family: fantasy;
+        padding: 31px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
 }    

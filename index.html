@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="js.js">
+</head>
+<body>
+
+    <section>
+        <!-- Nav/Forside -->
+    <div>
+        <div id="background" class="#section-1">
+            <div class="nav-box">
+            <h1>LILO</h1>
+
+            <div class="nav">
+                <h2><a href="#sention-1">Home</a></h2>
+                <h2><a href="#section-2" id="section-2">Experience</a></h2>
+                <h2><a href="#section-3">About</a></h2>
+                <h2><a href="#section-4">Contact</a></h2>
+            </div>
+            </div>
+            <hr>
+
+            <section id="box">
+                <h2 class="hidden">Line Lochmann Møller</h2>
+                <h1 class="hidden">Frontend- Designer <br> &amp; Developer</h1>
+                <a href="#.pdf" download="">Download CV</a>
+            </section>
+        </div>
+    </div>
+
+
+        <!-- Erfaring -->
+        <div id="background1" data-speed="-0.5">
+        <div class="resume">
+            <h1 class="hidden">Experience</h1>
+            
+            <div class="Experience">
+            <div class="hidden" id="Experience">
+                <img src="images/vsc.png" alt="">
+                <p>HTML</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/vsc.png" alt="">
+                <p>CSS</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/vsc.png" alt="">
+                <p>Javascript</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/vsc.png" alt="">
+                <p>RREACT</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/blender.png" alt="">
+                <p>3D Blender</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/asana.png" alt="">
+                <p>Asana</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/figma.png" alt="">
+                <p>Figma</p>
+            </div>
+
+            <div class="hidden" id="Experience">
+                <img src="images/asana.png" alt="">
+                <p>UX/UI</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+        <!-- About -->
+        <div id="background2"><a href="#section-2">
+          <div class="About">
+            <h1  class="hidden">About</h1>
+            <hr  class="hidden">
+            <p  class="hidden">Hi im Line</p>
+          </div></a>
+        </div>
+
+
+
+
+
+        <!-- Contact -->
+        <div id="background3" class="#section-4">
+            <h1>Contact</h1>
+            <section id="Contact">
+                <div class="info">
+                    <h2>Phone</h2>
+                    <p>+45 42 75 35 84</p>
+                    <h2>Email</h2>
+                    <p>Linemoller1907@gmail.com</p>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                        </div>
+                        <textarea name="" id="message" cols="100" rows="5" placeholder="Your message" class="item" autocomplete="off"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- SoMe -->
+        <div id="SoMe"></div>
+    </section>
+
+<script>
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
+</body>
+</html>

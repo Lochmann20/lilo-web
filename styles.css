@@ -301,16 +301,16 @@ input:checked + label .description{
 }
 
 .card[for="c1"]{
-    background-image: url('');
+    background-image: url('images/PNG/CA.png');
 }
 .card[for="c2"]{
-    background-image: url('');
+    background-image: url('images/PNG/Vahlwood.png');
 }
 .card[for="c3"]{
-    background-image: url('');
+    background-image: url('images/PNG/vildmad.png');
 }
 .card[for="c4"]{
-    background-image: url('');
+    background-image: url('images/PNG/todolist.png');
 }
 
 

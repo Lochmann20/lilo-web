@@ -4,7 +4,7 @@ body{
 
 HTML{
     scroll-behavior: smooth;
-    background-image: linear-gradient(#3f2525, black);
+    background-image: linear-gradient(black, #352626);
 }
 
 
@@ -25,7 +25,11 @@ HTML{
 
 
 #background{
-    height: 900px;   
+    height: 875px; 
+    background-image: url(images/profil2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -17px;
 }
 #background1{
     margin-top: -1.3em;
@@ -33,7 +37,7 @@ HTML{
 }
 #background2{
     height: 600px;
-    margin-top: -1em;
+    margin-top: 6em;
     position: relative;
 }
 
@@ -42,42 +46,15 @@ HTML{
 
 
 @media screen and (min-width: 1000px) {
-    /* Nav / forside */
-    /* #Home h1{
-        color: #FFD4B5;
-    }
-    
-    .nav{
-        display: flex;
-        justify-content: center;
-        gap: 22px;
-    }
-    
-    .nav a{
-        text-decoration: none;
-        color: #FFD4B5;
-    }
-    
-    .nav-box{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 3em;
-        margin-left: 3em;
-        margin-bottom: -0.6em;
-    }
-    .nav-box h1{
-        color: #FFD4B5;
-        font-size: 30px;
-        margin-top: 0.3em;
-    }
-    .nav h2{
-        margin-top: 1em;
-    } */
-
     .lilo{
         text-align: start;
-        margin-left: 2em;
         line-height: 26px;
+        padding: 27px;
+    }
+    .lilo h3{
+        text-align: start;
+        line-height: 26px;
+        color: #FFD4B5;
     }
     .lilo p{
         color: #FFD4B5;
@@ -100,17 +77,10 @@ HTML{
     
     #box h1{
         font-size: 9em;
-        margin-top: -2em;
+        margin-top: 3.5em;
         font-family: fantasy;
+        margin-bottom: 15px;
     }
-    #box p{
-        color: #FFD4B5;
-        font-size: 15em;
-        margin-top: 0.5em;
-        font-family: fantasy;
-    }
-
-
     span{
         font-size: 40px;
     }
@@ -127,17 +97,17 @@ HTML{
     }
     .SoMe a{
         text-decoration: none;
-        color: white;
+        color: #FFD4B5;
         font-size: 20px;
         background-color: black;
         padding: 15px;
         margin-bottom: 22px;
         border-radius: 50%;
         border-style: solid;
-        border-color: white;
+        border-color: #FFD4B5;
     }
     h2{
-        color: white;
+        color: #FFD4B5;
     }
 
 
@@ -148,30 +118,78 @@ HTML{
     .resume{
         border-top: #FFD4B5 1px solid;
         border-bottom: #FFD4B5 1px solid;
-        text-align: center;
+        text-align: start;
         padding: 20px;
         width: 80%;
         margin: auto;
     }
     h1{
         color: #FFD4B5;
+        font-size: 40px;
+        text-align: center;
     }
-    img{
-        width: 30%;
+    .CV{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 78px;
+        margin-left: 4em;
     }
 
-    #Experience{
+    hr{
+        width: 64%;
+        margin-left: 56px;
+        margin-top: 0;
+    }
+    p{
+        color: #FFD4B5;
+        margin-top: -17px;
+        line-height: 25px;
+    }
+    h2{
         color: #FFD4B5;
     }
 
-    .Experience{
+    /* Resume skills img */
+    img{
+        width: 75%;
+        margin-bottom: -1.5em;
+    }
+    .img-skills{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        width: 34em;
-        margin: auto;
+        gap: 20%;
     }
 
-
+#VSC {
+    width: 80%;
+}
+#CSS {
+    width: 130%;
+}    
+#Js {
+    width: 50%;
+}
+#HTML {
+    width: 110%;
+}
+#REACT {
+    width: 50%;
+}
+#Ps {
+    width: 50%;
+}
+#Id {
+    width: 50%;
+}
+#Ai {
+    width: 110%;
+}
+#Asana {
+    width: 80%;
+}
+#Figma {
+    width: 120%;
+}
 
 
     /* About */
@@ -180,22 +198,135 @@ HTML{
         color: #FFD4B5;
         top: 2em;
         font-size: 40px;
-        left: 8.3em;
+        left: 8em;
     }
 
     .About hr{
         position: absolute;
-        width: 15%;
+        width: 66%;
         top: 10em;
-        left: 15em;
-        color: #FFD4B5;
+        left: 16em;
     }
     .About p {
         position: absolute;
         color: #FFD4B5;
-        top: 13em;
-        left: 15em;
+        top: 7em;
+        left: 11em;
+        font-size: 30px;
     }
+
+
+
+
+
+/* Projekter */
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.3, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon{
+    background: black;
+    color: white;
+    border-radius: 65%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    margin-left: 20px;
+}
+
+.card > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 140px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s ;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 600px;
+}
+
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"]{
+    background-image: url('');
+}
+.card[for="c2"]{
+    background-image: url('');
+}
+.card[for="c3"]{
+    background-image: url('');
+}
+.card[for="c4"]{
+    background-image: url('');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -208,6 +339,25 @@ HTML{
         padding: 31px;
         margin-top: 0;
         margin-bottom: 0;
+        margin-right: 0.2em;
+    }
+    #background3{
+        display: flex;
+    justify-content: end;
+    }
+
+    .kontakt-info{
+        margin-top: 6em;
+        margin-right: -10em;
+    }
+    .kontakt-info p{
+    border-style: white;
+    border-bottom: solid;
+    width: 50%;
+    }
+   #iphone,
+   #mail{
+        width: 10%;
     }
 
 }    

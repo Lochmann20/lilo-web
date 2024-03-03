@@ -22,6 +22,23 @@ HTML{
 }
 
 
+/* Scroll animation */
+#scroll-animation {
+    width: 40px;
+    position: relative;
+    animation: mymove 2s infinite;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    margin-top: -2em;
+  }
+  
+  @keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: -50px;}
+  }
+
+
 
 /* Background */
 /* #background{
@@ -41,12 +58,16 @@ HTML{
 
 
 /* Phone */
+.lilo h3{
+    letter-spacing: 3px;
+}
 h3,
 p,
 h1,
 h2,
 a{
     color: #FFD4B5;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #box h1{
@@ -81,6 +102,7 @@ a{
 .About h1{
     text-align: center;
     margin-bottom: 0;
+    letter-spacing: 3px;
 }
 .About p{
     padding: 10px;
@@ -92,8 +114,12 @@ a{
     margin-top: -1.3em;
     padding: 10px;
 }
+.resume h1{
+    letter-spacing: 3px;
+}
 .resume h2{
     color: white;
+    letter-spacing: 3px;
 }
 #VSC {
     width: 10%;
@@ -259,7 +285,7 @@ input:checked + label .description{
 .SoMe a {
     background-color: black;
     padding: 11px;
-    height: 20px;
+    height: 18px;
     rotate: 45deg;
     border-style: solid;
     border-color: #ffD4B5;
@@ -270,11 +296,13 @@ input:checked + label .description{
     color: #ffD4b5;
     rotate: -45deg;
     margin-top: 0em;
+    letter-spacing: 3px;
 }
 .SoMe-Contact h1{
     color: white;
     font-size: 30px;
     text-align: center;
+    letter-spacing: 3px;
 } 
 
 .contact-info{
@@ -318,9 +346,6 @@ input:checked + label .description{
 @media screen and (min-width: 1000px) {
     #background{
         height: 875px; 
-        background-image: url(images/profil2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
         margin-top: -17px;
     }
     .lilo{
@@ -354,7 +379,7 @@ input:checked + label .description{
     
     #box h1{
         font-size: 9em;
-        margin-top: 3.5em;
+        margin-top: 1em;
         font-family: fantasy;
         margin-bottom: 15px;
         color: #FFD4B5;
@@ -484,6 +509,7 @@ input:checked + label .description{
         top: 2em;
         font-size: 40px;
         left: 8em;
+        font-family: "Bebas Neue", sans-serif;
     }
 
     .About hr{
@@ -498,6 +524,8 @@ input:checked + label .description{
         top: 7em;
         left: 11em;
         font-size: 30px;
+        line-height: 35px;
+        font-family: "Bebas Neue", sans-serif;
     }
 
 
